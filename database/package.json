@@ -1,0 +1,16 @@
+{
+  "name": "ott-database",
+  "version": "1.0.0",
+  "description": "Admin account, export and import of the OTT Platform data",
+  "main": "seed.js",
+  "scripts": {
+    "seed": "node seed.js",
+    "export": "node export-data.js",
+    "import": "node import-data.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bson": "^6.10.1",
+    "mongodb": "^6.12.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ott-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OTT Platform (MERN): React client, Express server, MongoDB database",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client && npm install --prefix database",
+    "seed": "npm run import --prefix database && npm run seed --prefix database",
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "export": "npm run export --prefix database"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
